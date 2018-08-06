@@ -36,15 +36,65 @@ border-radius: 3px 0 0 3px;
 background-color: rgba(0,0,0,0.8);
 }
 
+.text_header {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
+    font-size: 225%;
+    top: -25px;
+    right: 38px;
+    width: 100%;
+    text-align: right;
+    font-family: 'Permanent Marker', cursive;
+
+    h1{
+        margin-bottom: -60px;
+    }
+}
+
 .text {
-color: #f2f2f2;
-padding: 8px 12px;
-position: absolute;
-font-size: 250%;
-top: -10px;
-right: 25px;
-width: 100%;
-text-align: right;
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 250px;
+    right: 38px;
+    width: 100%;
+    text-align: right;
+}
+
+.alt-text {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 180px;
+    right: 38px;
+    width: 100%;
+    text-align: right;
+}
+
+.alt-text-2 {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 130px;
+    right: -20px;
+    width: 100%;
+    text-align: center;
+}
+
+.class-header {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
+    font-size: 225%;
+    top: 190px;
+    right: 225px;
+    width: 100%;
+    text-align: right;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .number-text {
@@ -74,7 +124,7 @@ background-color: #717171;
 //SUB GALLERIES
 
 #sub-gallery {
-    width: 77%;
+    width: 77.5%;
     margin-bottom: 3em;
 }
 
