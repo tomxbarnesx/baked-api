@@ -1,0 +1,27 @@
+.treat-master-container {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3em 0em; }
+
+.treat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(220, 207, 228, 0.555);
+  margin: 2em;
+  width: 300px;
+  padding-bottom: 2em;
+  box-shadow: 6px 6px 11px #765d86; }
+  .treat-card h2 {
+    margin-bottom: 8px; }
+  .treat-card p {
+    margin-bottom: 0px;
+    margin-top: 5px; }
+
+.treat-card:hover {
+  filter: hue-rotate(260deg); }
+
+/*# sourceMappingURL=treatstyles.css.map */

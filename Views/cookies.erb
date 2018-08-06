@@ -1,0 +1,10 @@
+<div class="treat-master-container">
+    <% @cookie_stock.each do |i| %>
+    <div class="treat-card">
+        <img src="<%=i.image_url%>" height="300" width="300">
+        <h2 class="logo-font"><%=i.flavor%></h2>
+        <p><%=i.description%></p>
+        <p><strong>$<%=i.price%></strong> per dozen</p>
+    </div>
+    <% end %>
+</div>
