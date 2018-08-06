@@ -38,12 +38,13 @@ background-color: rgba(0,0,0,0.8);
 
 .text {
 color: #f2f2f2;
-font-size: 15px;
 padding: 8px 12px;
 position: absolute;
-bottom: 8px;
+font-size: 250%;
+top: -10px;
+right: 25px;
 width: 100%;
-text-align: center;
+text-align: right;
 }
 
 .number-text {
