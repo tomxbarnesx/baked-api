@@ -1,0 +1,32 @@
+#search-view {
+  height: 100%;
+  min-height: 550px; }
+
+select {
+  border: 0;
+  font-family: sans-serif;
+  height: 33px;
+  color: grey; }
+
+input {
+  height: 33px;
+  border: 0;
+  font-family: sans-serif;
+  background-color: #f8f8f8; }
+
+#the-search {
+  margin: 3em 0em;
+  border: 1px gray solid;
+  border-radius: 2.5px;
+  background-color: #fafafa; }
+
+#go-button {
+  padding-bottom: 3px;
+  cursor: pointer;
+  color: grey; }
+
+#go-button:hover {
+  color: yellow;
+  background-color: lightgray; }
+
+/*# sourceMappingURL=searchstyles.css.map */

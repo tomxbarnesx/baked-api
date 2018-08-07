@@ -34,3 +34,18 @@ get "/muffins" do
     @muffin_stock = baked.stock.select {|item| item.tags[0] == "muffin"}
     erb :muffins
 end
+
+get "/recipes" do
+    erb :recipes
+end
+
+post '/searchapi' do
+    pick = params["pick_an_option"]
+    if pick === "ingredient"
+        response = HTTParty.get("https://api.edamam.com/search?q=${params[:id]&app_id=${APP_ID}&app_key=${APP_KEY})
+    elsif pick === "quick_search" 
+        response = HTTParty.get("https://api.edamam.com/search?q=")
+    end
+end
+
+# "https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=3&calories=591-722&health=alcohol-free"
