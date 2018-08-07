@@ -1,12 +1,11 @@
 <section id="search-view">
     <div id="the-search">
         <form action="/searchapi" method="post">
-            <input type="text" name="id" placeholder="Search by ID">
+            <input type="text" name="id" placeholder="Search...">
             <select name="pick_an_option">
-                <option value="all_films">All Recipes</option>
-                <option value="all_people">All People</option>
-                <option value="person_id">Person By Id</option>
-                <option value="starship_id">Starship By Id</option>
+                <option value="quick_search">Random Recipes</option>
+                <option value="by_treat">By Treat</option>
+                <option value="by_ingredient">By Ingredient</option>
             </select>
             <input id="go-button" type="submit" value="&#x1F50D;">
         </form>

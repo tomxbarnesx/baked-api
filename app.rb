@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require './classes.rb'
+require 'httparty'
 
 baked = Bakery.new("Baked")
 
@@ -39,13 +40,23 @@ get "/recipes" do
     erb :recipes
 end
 
+env = ENV["RECIPE_ID"]
+env2 = ENV["RECIPE_KEY"]
+
 post '/searchapi' do
     pick = params["pick_an_option"]
-    if pick === "ingredient"
-        response = HTTParty.get("https://api.edamam.com/search?q=${params[:id]&app_id=${APP_ID}&app_key=${APP_KEY})
+    if pick === "by_treat"
+        response = HTTParty.get("https://api.edamam.com/search?q=#{params[:id]}&app_id=#{env}&app_key=#{env2}")
+        @full_arr = response["hits"]
+        @random_recipes = response["hits"].sample(3)
+    elsif pick === "by_ingredient" 
+        response = HTTParty.get("https://api.edamam.com/search?q=#{params[:id]}&app_id=#{env}&app_key=#{env2}")
+        @full_arr = response["hits"]
+        @random_recipes = response["hits"].sample(3)
     elsif pick === "quick_search" 
-        response = HTTParty.get("https://api.edamam.com/search?q=")
+        response = HTTParty.get("https://api.edamam.com/search?q=muffins+cakes+cookies&app_id=#{env}&app_key=#{env2}")
+        @full_arr = response["hits"]
+        @random_recipes = response["hits"].sample(3)
     end
+    erb :quicksearch, :layout => :searchlayout
 end
-
-# "https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=3&calories=591-722&health=alcohol-free"

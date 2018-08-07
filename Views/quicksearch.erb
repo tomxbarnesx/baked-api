@@ -1,0 +1,9 @@
+<div class="treat-master-container">
+    <% @random_recipes.each do |i| %>
+    <div class="treat-card">
+        <img src="<%=i['recipe']['image']%>" height="300" width="300">
+        <h2 class="logo-font"><%=i['recipe']['label']%></h2>
+        <p><strong>Source: </strong><a href="<%=i['recipe']['url']%>"><%=i['recipe']['source']%></a></p>
+    </div>
+    <% end %>
+</div>

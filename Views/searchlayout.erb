@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="indexstyles.css">
+        <link rel="stylesheet" href="treatstyles.css">
+        <link rel="stylesheet" href="searchstyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div id="the-view">
+            <header>
+                <nav>
+                    <div class="dropdown">
+                        <button class="dropbtn"><strong>=</strong></button>
+                        <div class="dropdown-content">
+                            <a href="#">About</a>
+                            <a href="recipes">Recipes</a>
+                            <a href="cakes">Cakes</a>
+                            <a href="cookies">Cookies</a>
+                            <a href="muffins">Muffins</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="no-link" href="/"><h1 id="head-logo" class="logo-font">Baked</h1></a>
+                    </div>
+                    <div class="sign-up-button">
+                        <p><strong>Sign Up</strong></p>
+                    </div>
+                </nav>
+            </header>
+            <section id="search-view-alt">
+                <div id="the-search-alt">
+                    <form action="/searchapi" method="post">
+                        <input type="text" name="id" placeholder="Search by treat...">
+                        <select name="pick_an_option">
+                            <option value="quick_search">Random Recipes</option>
+                            <option value="by_treat">By Treat</option>
+                            <option value="by_ingredient">By Ingredient</option>
+                        </select>
+                        <input id="go-button" type="submit" value="&#x1F50D;">
+                    </form>
+                </div>
+            </section>
+                <%= yield %>
+            <footer>
+                <h1 class="logo-font">Baked</h1>
+                <div id="socials">
+                    <img class="social-icon" src="images/insta.png">
+                    <img class="social-icon" src="images/fb.png">
+                    <img class="social-icon" src="images/twitter.png">
+                </div>
+                <div id="final-notes">
+                    <p class="footer-graphs">Baked is a registered trademark of Dope Cakes Srl a socio unico supercalafrajalistic best forever LTD. Baked LTD takes no liability for freakouts, scaries or sceevies while using our products.</p>
+                    <p class="footer-graphs end-line">Baked is a site owned by Dope Cakes Srl a socio unico, viale Piceno 17 20159 Milano P.IVA and R.E.A. 07234480965 </p>
+                </div>
+            </footer>
+        </div>
+        <script src="main.js" type="text/javascript"></script>
+    </body>
+</html>

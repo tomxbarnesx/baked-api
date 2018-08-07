@@ -5,6 +5,10 @@ $search-height: 33px;
     min-height: 550px;
 }
 
+#search-view-alt {
+  height: 100%;
+}
+
 select {
   border: 0; 
   font-family: sans-serif;
@@ -24,6 +28,13 @@ input {
     border: 1px gray solid;
     border-radius: 2.5px;
     background-color: rgb(250, 250, 250);
+}
+
+#the-search-alt {
+  margin-top: 3em;
+  border: 1px gray solid;
+  border-radius: 2.5px;
+  background-color: rgb(250, 250, 250);
 }
 
 #go-button {

@@ -2,6 +2,9 @@
   height: 100%;
   min-height: 550px; }
 
+#search-view-alt {
+  height: 100%; }
+
 select {
   border: 0;
   font-family: sans-serif;
@@ -16,6 +19,12 @@ input {
 
 #the-search {
   margin: 3em 0em;
+  border: 1px gray solid;
+  border-radius: 2.5px;
+  background-color: #fafafa; }
+
+#the-search-alt {
+  margin-top: 3em;
   border: 1px gray solid;
   border-radius: 2.5px;
   background-color: #fafafa; }

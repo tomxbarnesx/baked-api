@@ -29,6 +29,9 @@ nav {
   text-decoration: none;
   color: black; }
 
+.no-link:hover {
+  text-shadow: 1px 1px 5px #f56a9f; }
+
 .logo-font {
   font-family: "Permanent Marker", cursive; }
 
