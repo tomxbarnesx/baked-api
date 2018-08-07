@@ -20,6 +20,10 @@ get "/" do
     erb :index
 end
 
+get"/about" do
+    erb :about
+end
+
 get "/cakes" do
     @cake_stock = baked.stock.select {|item| item.tags[0] == "cake"}
     erb :cakes

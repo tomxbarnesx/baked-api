@@ -40,7 +40,7 @@ nav {
 }
 
 .no-link:hover {
-    text-shadow: 1px 1px 5px #f56a9f;
+    text-shadow: 1px 1px 5px #b26af5;
 }
 
 .logo-font {
@@ -97,6 +97,7 @@ nav {
 
 //FOOTER
 footer {
+    // border-top: 3px purple solid;
     color: black;
     width: 100%;
     display: flex;
@@ -105,8 +106,12 @@ footer {
     background-color: $brand-color-transp;
 }
 
+.footer-logo {
+    margin-bottom: 0px;
+    font-size: 250%;
+}
+
 #final-notes {
-    width: 75%;
     text-align: center;
 }
 
@@ -126,4 +131,45 @@ footer {
 
 #socials {
     padding-bottom: 1.5em;
+}
+
+#footer-column-container {
+    width: 75%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo-socials-final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    width: 50%;
+}
+
+//MAP
+
+.map-text {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.mapouter{
+    text-align:right;
+    height:250px;
+    width:250px;
+    margin: 1em;
+    box-shadow: 1px 1px 9px #b26af5;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:250px;
+    width:250px;
+}
+
+.map-container {
+    margin-bottom: 1em;
 }

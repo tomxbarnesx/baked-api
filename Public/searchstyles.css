@@ -18,13 +18,13 @@ input {
   background-color: #f8f8f8; }
 
 #the-search {
-  margin: 3em 0em;
+  margin: 1em 0em;
   border: 1px gray solid;
   border-radius: 2.5px;
   background-color: #fafafa; }
 
 #the-search-alt {
-  margin-top: 3em;
+  margin-top: 1em;
   border: 1px gray solid;
   border-radius: 2.5px;
   background-color: #fafafa; }
@@ -37,5 +37,10 @@ input {
 #go-button:hover {
   color: yellow;
   background-color: lightgray; }
+
+.recipe-copy {
+  margin-top: 3em;
+  padding: 0em 3em;
+  text-align: center; }
 
 /*# sourceMappingURL=searchstyles.css.map */

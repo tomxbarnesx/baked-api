@@ -15,7 +15,7 @@
                     <div class="dropdown">
                         <button class="dropbtn"><strong>=</strong></button>
                         <div class="dropdown-content">
-                            <a href="#">About</a>
+                            <a href="about">About</a>
                             <a href="recipes">Recipes</a>
                             <a href="cakes">Cakes</a>
                             <a href="cookies">Cookies</a>
@@ -26,21 +26,40 @@
                         <a class="no-link" href="/"><h1 id="head-logo" class="logo-font">Baked</h1></a>
                     </div>
                     <div class="sign-up-button">
-                        <p><strong>Sign Up</strong></p>
+                        <a href="about" class="no-link"><p class="logo-font"><strong>Sign Up</strong></p></a>
                     </div>
                 </nav>
             </header>
                 <%= yield %>
             <footer>
-                <h1 class="logo-font">Baked</h1>
-                <div id="socials">
-                    <img class="social-icon" src="images/insta.png">
-                    <img class="social-icon" src="images/fb.png">
-                    <img class="social-icon" src="images/twitter.png">
-                </div>
-                <div id="final-notes">
-                    <p class="footer-graphs">Baked is a registered trademark of Dope Cakes Srl a socio unico supercalafrajalistic best forever LTD. Baked LTD takes no liability for freakouts, scaries or sceevies while using our products.</p>
-                    <p class="footer-graphs end-line">Baked is a site owned by Dope Cakes Srl a socio unico, viale Piceno 17 20159 Milano P.IVA and R.E.A. 07234480965 </p>
+                <div id="footer-column-container">
+                    <div class="map-container">
+                        <h3 class="map-text logo-font">Visit our flagship:</h3>
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=630%20flushing&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://www.pureblack.de">pureblack.de</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-socials-final">
+                        <h1 class="logo-font footer-logo">Baked</h1>
+                        <p class="logo-font"><a class="no-link" href="about">About</a> &middot; 
+                        <a class="no-link" href="recipes">Recipes</a> &middot; 
+                        <a class="no-link" href="cakes">Cakes</a> &middot; 
+                        <a class="no-link" href="cookies">Cookies</a> &middot; 
+                        <a class="no-link" href="muffins">Muffins</a></p>
+                        <div id="socials">
+                            <img class="social-icon" src="images/insta.png">
+                            <img class="social-icon" src="images/fb.png">
+                            <img class="social-icon" src="images/twitter.png">
+                        </div>
+                        <div id="final-notes">
+                            <p class="footer-graphs">Baked is a registered trademark of Dope Cakes Srl a socio unico supercalafrajalistic best forever LTD.</p>
+                            <p class="footer-graphs">Baked LTD takes no liability for freakouts, scaries or sceevies while using our products.</p>
+                            <p class="footer-graphs end-line">Baked is a site owned by Dope Cakes Srl a socio unico, viale Piceno 17 20159 Milano P.IVA and R.E.A. 07234480965 </p>
+                        </div>
+                    </div>
                 </div>
             </footer>
         </div>

@@ -1,5 +1,9 @@
 #feature {
-  margin: 2.5em 0em 3em 0em; }
+  margin: 2.5em 0em 1.5em 0em; }
+
+#text-break {
+  margin-bottom: 3em;
+  text-align: center; }
 
 .slideshow-container {
   max-width: 1000px;
@@ -154,5 +158,11 @@
     opacity: .4; }
   to {
     opacity: 1; } }
+#about-page {
+  min-height: 600px; }
+
+.coming-soon {
+  margin-top: 3em;
+  font-size: 300%; }
 
 /*# sourceMappingURL=indexstyles.css.map */
