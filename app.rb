@@ -16,7 +16,6 @@ baked.add_item(Muffin.new("Orange-Cranberry", 10, ["muffin", "cranberry"], "Tang
 baked.add_item(Muffin.new("Ginger Peach", 10, ["muffin", "ginger", "peach"], "Cures cancer.", "/images/peach-square.jpg"))
 
 
-
 get "/" do 
     erb :index
 end

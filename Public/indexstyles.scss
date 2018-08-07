@@ -52,6 +52,22 @@ background-color: rgba(0,0,0,0.8);
     }
 }
 
+.alt_text_header {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
+    font-size: 225%;
+    top: -25px;
+    right: 55px;
+    width: 100%;
+    text-align: right;
+    font-family: 'Permanent Marker', cursive;
+
+    h1{
+        margin-bottom: -60px;
+    }
+}
+
 .glow {
     text-shadow: 1px 1px 5px #f56a9f;
 }
