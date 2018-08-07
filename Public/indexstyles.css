@@ -42,6 +42,9 @@
   .text_header h1 {
     margin-bottom: -60px; }
 
+.glow {
+  text-shadow: 1px 1px 5px #f56a9f; }
+
 .text {
   color: #f2f2f2;
   font-size: 18px;
@@ -116,10 +119,11 @@
     margin: 10px 0px; }
 
 .sub-good:hover {
-  filter: drop-shadow(16px 16px 20px purple); }
+  filter: drop-shadow(16px 16px 20px purple) grayscale(50%); }
 
-.sub-pic:hover {
-  filter: invert(75%); }
+.sub-links {
+  text-decoration: none;
+  color: black; }
 
 .fade {
   -webkit-animation-name: fade;

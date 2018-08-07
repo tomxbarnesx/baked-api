@@ -22,6 +22,6 @@
     margin-top: 5px; }
 
 .treat-card:hover {
-  filter: hue-rotate(260deg); }
+  filter: drop-shadow(16px 16px 20px #ba78e2) grayscale(50%); }
 
 /*# sourceMappingURL=treatstyles.css.map */
